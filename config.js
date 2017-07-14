@@ -12,7 +12,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'https://xenya.herokuapp.com',
+        url: process.env.URL,
         mail: {},
         database: {
             client: 'postgres',
